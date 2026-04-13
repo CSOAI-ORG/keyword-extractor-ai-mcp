@@ -1,0 +1,10 @@
+name: keyword-extractor-ai-mcp
+description: "MEOK AI Labs — keyword-extractor-ai-mcp — Extract keywords and topics from text."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/keyword-extractor-ai-mcp
+license: MIT
+categories: [NLP, Content]
+tags: [keyword-extraction, text-mining, nlp, seo-keywords, content-analysis]
+runtime: python
+entrypoint: server.py
