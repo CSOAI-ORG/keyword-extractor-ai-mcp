@@ -1,20 +1,73 @@
 {
   "name": "keyword-extractor-ai-mcp",
-  "description": "MEOK AI Labs \u2014 keyword-extractor-ai-mcp \u2014 Extract keywords and topics from text.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/keyword-extractor-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "keyword-extractor-ai-mcp \u2014 Extract keywords and topics from text.",
+  "version": "1.0.0",
   "tools": [
-    "run"
-  ],
-  "categories": [
-    "NLP",
-    "Content"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "extract_keywords",
+      "description": "Extract top keywords using TF-IDF scoring.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "max_keywords": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "extract_phrases",
+      "description": "Extract key phrases (2-3 word combinations).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "max_phrases": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "topic_classification",
+      "description": "Classify text into topic categories.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "keyword_density",
+      "description": "Calculate keyword density for SEO analysis.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    }
+  ]
 }
