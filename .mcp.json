@@ -1,6 +1,6 @@
 {
   "name": "keyword-extractor-ai-mcp",
-  "description": "keyword-extractor-ai-mcp \u2014 Extract keywords and topics from text.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs \u2014 Extract keywords and key phrases from text using TF-IDF and statistical methods.",
   "version": "1.0.0",
   "tools": [
     {
