@@ -1,6 +1,6 @@
 name: keyword-extractor-ai-mcp
-description: "MEOK AI Labs \u2014 Extract keywords and key phrases from text using\
-  \ TF-IDF and statistical methods."
+description: 'Keyword Extractor Ai tools for AI agents. Capabilities: extract keywords,
+  extract phrases, topic classification. Built by MEOK AI Labs.'
 version: 1.0.0
 tools:
 - name: extract_keywords
