@@ -1,0 +1,54 @@
+{
+  "name": "keyword-extractor-ai",
+  "description": "MEOK AI Labs \u2014 Extract keywords, phrases, and tags from text using TF-IDF and statistical analysis.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/keyword-extractor-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "extract_keywords",
+      "description": "Extract top keywords using TF-IDF scoring with stop word filtering and frequency analysis."
+    },
+    {
+      "name": "analyze_density",
+      "description": "Calculate keyword density for SEO analysis, with target keyword tracking and recommendations."
+    },
+    {
+      "name": "suggest_tags",
+      "description": "Suggest tags and categories for content based on keyword analysis and topic matching."
+    },
+    {
+      "name": "compare_keywords",
+      "description": "Compare keywords between two texts to find common, unique, and differentiating terms."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Natural Language Processing",
+    "Productivity"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
