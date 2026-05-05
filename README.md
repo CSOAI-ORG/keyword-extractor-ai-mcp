@@ -1,51 +1,38 @@
-# Keyword Extractor AI
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Extract keywords and key phrases from text using TF-IDF and statistical methods
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/keyword-extractor-ai-mcp)](https://github.com/CSOAI-ORG/keyword-extractor-ai-mcp/stargazers)
+
+# ukeywordU extractorU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/keyword-extractor-ai-mcp)](https://www.npmjs.com/package/@meok-ai/keyword-extractor-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/keyword-extractor-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install keyword-extractor-ai-mcp
+# or
+npm install -g @meok-ai/keyword-extractor-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-### `extract_keywords`
-Extract top keywords using TF-IDF scoring.
-
-**Parameters:**
-- `text` (str): Text to extract keywords from
-- `max_keywords` (int): Maximum number of keywords (default: 10)
-
-### `extract_phrases`
-Extract key phrases (2-3 word combinations).
-
-**Parameters:**
-- `text` (str): Text to extract phrases from
-- `max_phrases` (int): Maximum number of phrases (default: 5)
-
-### `topic_classification`
-Classify text into topic categories.
-
-**Parameters:**
-- `text` (str): Text to classify
-
-### `keyword_density`
-Calculate keyword density for SEO analysis.
-
-**Parameters:**
-- `text` (str): Text to analyze
-
-## Authentication
-
-Free tier: 30 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
