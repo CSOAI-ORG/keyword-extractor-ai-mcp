@@ -1,3 +1,5 @@
+[![keyword-extractor-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/keyword-extractor-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/keyword-extractor-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/keyword-extractor-ai-mcp)](https://github.com/CSOAI-ORG/keyword-extractor-ai-mcp/stargazers)
