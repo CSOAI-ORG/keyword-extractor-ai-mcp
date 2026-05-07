@@ -67,7 +67,23 @@ def _ngrams(words: list, n: int) -> list:
 @mcp.tool()
 def extract_keywords(text: str, max_keywords: int = 10, min_word_length: int = 3,
                       api_key: str = "") -> str:
-    """Extract top keywords using TF-IDF scoring with stop word filtering and frequency analysis."""
+    """Extract top keywords using TF-IDF scoring with stop word filtering and frequency analysis.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -106,7 +122,23 @@ def extract_keywords(text: str, max_keywords: int = 10, min_word_length: int = 3
 
 @mcp.tool()
 def analyze_density(text: str, target_keywords: str = "", api_key: str = "") -> str:
-    """Calculate keyword density for SEO analysis, with target keyword tracking and recommendations."""
+    """Calculate keyword density for SEO analysis, with target keyword tracking and recommendations.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -162,7 +194,23 @@ def analyze_density(text: str, target_keywords: str = "", api_key: str = "") -> 
 
 @mcp.tool()
 def suggest_tags(text: str, max_tags: int = 10, api_key: str = "") -> str:
-    """Suggest tags and categories for content based on keyword analysis and topic matching."""
+    """Suggest tags and categories for content based on keyword analysis and topic matching.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -208,7 +256,23 @@ def suggest_tags(text: str, max_tags: int = 10, api_key: str = "") -> str:
 
 @mcp.tool()
 def compare_keywords(text_a: str, text_b: str, api_key: str = "") -> str:
-    """Compare keywords between two texts to find common, unique, and differentiating terms."""
+    """Compare keywords between two texts to find common, unique, and differentiating terms.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
