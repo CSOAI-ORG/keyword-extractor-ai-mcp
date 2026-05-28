@@ -2,13 +2,21 @@
 """Extract keywords and key phrases from text using TF-IDF and statistical methods. — MEOK AI Labs."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json, re, math
 from datetime import datetime, timezone
 from collections import defaultdict
 from mcp.server.fastmcp import FastMCP
+
+STRIPE_199 = "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"
+
+def _add_upgrade_tail(response, tier="free"):
+    """Append upgrade nudge to free-tier success responses."""
+    if isinstance(response, dict) and tier == "free":
+        response["_upgrade_note"] = "Pro tier: unlimited calls + priority support. Upgrade: " + STRIPE_199
+    return response
+
 
 FREE_DAILY_LIMIT = 30
 _usage = defaultdict(list)
@@ -107,7 +115,7 @@ def extract_keywords(text: str, max_keywords: int = 10, min_word_length: int = 3
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
     if err := _rl(): return err
 
     words = _tokenize(text)
@@ -182,7 +190,7 @@ def analyze_density(text: str, target_keywords: str = "", api_key: str = "") -> 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
     if err := _rl(): return err
 
     all_words = re.findall(r"\b[a-zA-Z]{2,}\b", text.lower())
@@ -274,7 +282,7 @@ def suggest_tags(text: str, max_tags: int = 10, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
     if err := _rl(): return err
 
     words = _tokenize(text)
@@ -356,7 +364,7 @@ def compare_keywords(text_a: str, text_b: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
     if err := _rl(): return err
 
     words_a = _tokenize(text_a)
@@ -404,5 +412,8 @@ def compare_keywords(text_a: str, text_b: str, api_key: str = "") -> str:
     }
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
