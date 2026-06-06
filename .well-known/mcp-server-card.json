@@ -1,0 +1,25 @@
+{
+  "name": "keyword-extractor-ai-mcp",
+  "title": "Keyword Extractor Ai Mcp",
+  "description": "Keyword Extractor Ai tools for AI agents. Capabilities: extract keywords, extract phrases, topic classification. Built by MEOK AI Labs.",
+  "version": "1.0.7",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "extract_keywords"
+    },
+    {
+      "name": "analyze_density"
+    },
+    {
+      "name": "suggest_tags"
+    },
+    {
+      "name": "compare_keywords"
+    }
+  ]
+}

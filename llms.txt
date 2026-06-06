@@ -1,0 +1,33 @@
+# keyword-extractor-ai-mcp
+# **MCP server for keyword extractor ai mcp operations**
+
+## Install
+```bash
+pip install keyword-extractor-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `extract_keywords`
+Extract top keywords using TF-IDF scoring with stop word filtering and frequency analysis.
+
+### `analyze_density`
+Calculate keyword density for SEO analysis, with target keyword tracking and recommendations.
+
+### `suggest_tags`
+Suggest tags and categories for content based on keyword analysis and topic matching.
+
+### `compare_keywords`
+Compare keywords between two texts to find common, unique, and differentiating terms.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

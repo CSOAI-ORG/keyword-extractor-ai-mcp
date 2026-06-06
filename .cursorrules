@@ -1,0 +1,9 @@
+# keyword-extractor-ai-mcp - Auto-trigger Rules
+
+When the user asks about keyword extractor, use keyword-extractor-ai-mcp tools: extract_keywords, analyze_density, suggest_tags, compare_keywords
+
+**MCP server for keyword extractor ai mcp operations**
+
+Install: `pip install keyword-extractor-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

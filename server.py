@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Extract keywords and key phrases from text using TF-IDF and statistical methods. — MEOK AI Labs."""
+"""
+Extract keywords and key phrases from text using TF-IDF and statistical methods. — MEOK AI Labs."""
 
 import sys, os
 from auth_middleware import check_access
