@@ -1,0 +1,59 @@
+{
+  "name": "keyword-extractor-ai-mcp",
+  "description": "Keyword Extractor Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/keyword-extractor-ai-mcp.html",
+  "version": "1.0.7",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "extract_keywords",
+      "name": "Extract Keywords",
+      "description": "extract_keywords via keyword-extractor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_density",
+      "name": "Analyze Density",
+      "description": "analyze_density via keyword-extractor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "suggest_tags",
+      "name": "Suggest Tags",
+      "description": "suggest_tags via keyword-extractor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "compare_keywords",
+      "name": "Compare Keywords",
+      "description": "compare_keywords via keyword-extractor-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

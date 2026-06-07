@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "keyword-extractor-ai-mcp",
+    "description": "Keyword Extractor Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.7",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "keyword-extractor-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "extract_keywords",
+      "analyze_density",
+      "suggest_tags",
+      "compare_keywords"
+    ]
+  }
+}
